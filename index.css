@@ -1,0 +1,35 @@
+body{
+    background-color: darkkhaki;
+}
+table {
+    background-color: aqua;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    border-collapse: collapse;
+  }
+
+   th, td {
+    border: 1px solid;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: coral;
+    color: blueviolet;
+    text-align: center;
+    
+  }
+h1{
+  color: rgb(92, 32, 126); 
+}
+tr:hover {
+  background-color: lightgray;
+}
+
+
+
+
+  
+

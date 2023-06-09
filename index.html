@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>API REST</title>
+  <span class="pln">
+  </span>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic"><span
+    class="pln">
+  </span>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"><span class="pln">
+  </span>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css"><span class="pln">
+  </span>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+  <header>
+    <h1>API REST</h1>
+  </header>
+  <button id="open-modal">Nuevo Registro</button>
+  <dialog id="modal">
+    <form action="" method="dialog" id="form">
+      <label for="fullName">Nombre completo
+        <input type="text" id="fullName" name="fullName" required>
+      </label>
+      <label for="email">Correo Electrónico
+        <input type="email" id="email" name="email" required>
+      </label>
+      <label for="phone">Teléfono
+        <input type="tel" id="phone" name="phone" required>
+        <!-- pattern="^(?:(?:00)?549?)?0?(?:11|[2368]\d)(?:(?=\d{0,2}15)\d{2})??\d{8}$"> -->
+      </label>
+      <input type="submit" value="aceptar">
+      <input type="reset" value="limpiar">
+      <input type="button" value="cancelar" id="close-modal">
+    </form>
+  </dialog>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Correo Electrónico</th>
+        <th>Teléfono</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="Tabla"></tbody>
+  </table>
+</body>
+
+</html>
