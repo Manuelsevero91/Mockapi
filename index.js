@@ -136,15 +136,15 @@ async function handleSubmit(event) {
   try {
     if (editUserId) {
       await updateOne(editUserId, user);
-      alert("Usuario actualizado correctamente");
+      Swal.fire("Usuario actualizado correctamente", "success");
     } else {
       const existingUser = await verificarExisteUsuario(user);
       if (existingUser) {
-        alert("El usuario ya existe");
+        Swal.fire("El usuario ya existe", "error");
       } else {
         const newUser = await addOne(user);
         if (newUser) {
-          alert("Usuario agregado correctamente");
+          Swal.fire("Usuario agregado correctamente", "success");
         }
       }
     }
